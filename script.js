@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzRosPYEijUUCZxaAmoAu9Z7DL43jhI55XnkC2rXI7eiKh9d6TlQyzeOTqnAP6IfzKwIA/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbywv8ojAVxxFIUO_Caj3bdhPjgi7QXcnw8uOBpIKLAAFpq8Z_AEbZLJJRar01MXfPRt/exec";
 let PASSWORD = localStorage.getItem('exchange_password') || '0418';
 let START_DATE = localStorage.getItem('exchange_start') || '2024-04-18';
 const $ = (id) => document.getElementById(id);
@@ -21,7 +21,7 @@ function login(){
     $('login').classList.add('hidden');
     $('app').classList.remove('hidden');
     loadAll();
-  } else $('loginStatus').textContent='비밀번호가 달라요.';
+  } else $('loginStatus').textContent='비밀번호를 틀리다니!!!!.';
 }
 function openSettings(){ $('settingsPassword').value=PASSWORD; $('settingsStart').value=START_DATE; $('settingsDialog').showModal(); }
 function saveSettings(){ PASSWORD=$('settingsPassword').value||'0418'; START_DATE=$('settingsStart').value||'2024-04-18'; localStorage.setItem('exchange_password',PASSWORD); localStorage.setItem('exchange_start',START_DATE); updateToday(); $('settingsDialog').close(); }
@@ -140,7 +140,7 @@ function openDetail(type,obj){
   $('modalMeta').textContent=`${obj.writer||''} · ${formatDate(obj.date||obj.createdAt||obj.openDate)}`;
   let body='';
   if(type==='capsule'&&!isOpen(obj.openDate)){
-    body=`<p>아직 열 수 없는 편지입니다.</p><p>${daysLeftText(obj.openDate)}</p>`;
+    body=`<p>아직 열 수 없는 편지입니다 참을성을 기르새우</p><p>${daysLeftText(obj.openDate)}</p>`;
   } else {
     body += obj.content ? `<div>${nl2br(obj.content)}</div>` : '';
     body += obj.memo ? `<div>${nl2br(obj.memo)}</div>` : '';
