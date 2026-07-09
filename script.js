@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzRosPYEijUUCZxaAmoAu9Z7DL43jhI55XnkC2rXI7eiKh9d6TlQyzeOTqnAP6IfzKwIA/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbx8zCBxWCMNTS0ikevdhrdYiuhZ7CEhOD4kdR7NG7fJvga-c0FuAtIbYzetlGPqjOYE/exec";
 const PASSWORD = "0418";
 const ANNIVERSARY = "2024-04-18";
 const $ = id => document.getElementById(id);
