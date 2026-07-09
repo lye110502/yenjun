@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbxs8a_fRHPr3Lsk48HFZVWoU8mrM0aGAd5Ij-yidDY6uqvqrMsFKz2lbOhEhTG0kh82/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzNEr6O1yvkbKU2U0RSIcZrNA3v1FhPghFXmER54gbHSmuJ6uh5sgqVKUkAfp5CKI24/exec";
 const DEFAULT_PASSWORD = "0418";
 let appPassword = localStorage.getItem("exchangeDiaryPassword") || DEFAULT_PASSWORD;
 const ANNIVERSARY = "2024-04-18";
